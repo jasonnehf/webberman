@@ -1,0 +1,191 @@
+@font-face {
+   font-family: "Helvetica Neue Extra Light";
+   src: url("./img/helvneue-xl.woff");
+ }
+ @font-face {
+   font-family: "Weather";
+   src: url("./img/artillcleanweathericons-Regular.woff");
+ }
+
+
+
+body{
+	padding-top:1em;
+	font-family:"Encode Sans Compressed Regular";
+}
+.logo {
+	background-image:url("./img/dvd3-poster-orange-crop-logo.png");
+	height:160px;
+	background-size:auto 160px;
+	background-repeat:no-repeat;
+	background-color:#e39635;
+	background-position:right;
+	border-radius:10px;
+	border-color:transparent;
+	vertical-align:bottom;
+	padding-top:130px;
+	/*font-size:4vw;*/
+	/*min-width:575px;*/
+	color:#222;
+	font-si
+}
+
+.temperature {
+	font-size:6em;
+	font-family:"Helvetica Neue Extra Light";
+	letter-spacing:-5px;
+	text-align:center;
+	line-height:100%;
+	padding-left:0px;
+}
+
+.temperature-current
+{
+	/*content:"°F";*/
+	font-size:200%;
+	/*vertical-align:super;*/
+	letter-spacing:1px;
+	text-align:center;
+	line-height:50%;
+}
+
+/*.metric.temperature::after
+{
+	content:"°C";
+	font-size:33%;
+	vertical-align:super;
+}*/
+
+
+
+.wi-icon.wi {
+	min-width:90px;
+	width:90px;
+	min-height:90px;
+	height:90px;
+	background-size:90px 90px;
+	background-repeat:no-repeat;
+}
+
+
+.wi.wi-sunny{
+	content:"1";
+	}
+.wi.wi-icon
+{
+	font-family:"Weather";
+	margin:0px;
+	padding:0px;
+	/*margin-bottom:0.5ex;*/
+	
+}
+.wi
+{
+	font-size:9em;
+	line-height:50%;
+	text-align:center;
+	padding-bottom:1px;
+
+
+}
+.wi.wi-desc {
+	/*font-family:"Helvetica Neue Extra Light";*/
+	font-size:100%;
+	color:black;
+
+	margin-top:1em;
+	line-height:100%;
+}
+
+/*div {outline:black 1px solid;}*/
+
+.info {
+	font-family:"Encode Sans Compressed Regular";
+	/*font-family:"Amble Condensed";*/
+	font-size:90%;
+	text-align:center;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-transform:uppercase;
+	vertical-align:middle;
+	letter-spacing:-0.5px;
+}
+
+.info.info-right
+{
+	text-align:right;
+	overflow-x:auto;
+	text-transform:uppercase;
+}
+
+.info.info-left
+{
+	text-align:left;
+	overflow-x:auto;
+	text-transform:uppercase;
+}
+
+.info.row {
+	margin-left:0px;
+	margin-right:0px;
+	padding-left:0px;
+	padding-right:0px;
+	vertical-align:middle;
+	padding-top:1em;
+}
+
+.row.info div.info
+{
+	padding-left:0px;
+	padding-right:0px;
+}
+
+
+.panel-heading{
+	padding-top:0px;
+	padding-bottom:0px;
+	font-size:150%;
+	margin-left:0px;
+	margin-right:0px;
+	padding:0px;
+}
+.container>.row {
+	margin-top:1em;
+}
+
+.info-space hr  {
+  margin-top: 1px;
+  margin-bottom: 5px;
+ }
+
+.temperature-holder
+{
+	padding-left:0px;
+}
+
+.datetime {
+	letter-spacing:-1px;
+}
+
+.temperature-day{
+	font-size:3em;
+	font-family:"Helvetica Neue Extra Light";
+	letter-spacing:-3px;
+	text-align:center;
+	line-height:100%;
+	padding-left:0px;
+}
+
+.temperature-day-degrees
+{
+	/*content:"°F";*/
+	font-size:100%;
+	margin-top:0.5em;
+	/*vertical-align:super;*/
+	letter-spacing:1px;
+	text-align:center;
+	line-height:10%;
+}
+
+.temp-hi + .temperature-day-degrees, .temp-hi { color:red;}
+.temp-lo + .temperature-day-degrees, .temp-lo { color:blue;}

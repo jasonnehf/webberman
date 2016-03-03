@@ -1,0 +1,13 @@
+find a city / location
+get the weather for that city
+add cities they've searched for to localstorage
+when user goes to site after checking locations' weather, auto-load those cities on page-load
+
+-	localStorage: write/read/modify/etc.
+-	openweathermap.org API
+-	my owm.org API Key : 5744c973a319fc22e02b4bcfcdcec710
+
+Client ID (Consumer Key)
+dj0yJmk9eHFVUnJwcHFqYVQ5JmQ9WVdrOWQzaExkV1puTTJNbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD0yNQ--
+Client Secret (Consumer Secret)
+6d822851455c2d05b398a3cdbfd152d55717c8a4

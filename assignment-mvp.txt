@@ -1,0 +1,30 @@
+
+Personalized Weather Tracker
+
+Create a webapp that will allow a user to get weather information about locations that they are tracking.  Use AJAX to access information from the OpenWeatherMap API (You may use Weather Underground or something else if you'd prefer).  Using local storage, allow the user to come back to the page later to see updated weather information about those saved locations.
+
+MVP:
+	* CRUD on locations.  Be able to find locations, and save them to local storage.  Be able to remove them as well.
+
+	* To find locations, you can use the built in features of the API, or you may like to check out http://www.zippopotam.us/.  This is an api for searching for locations by zip code or city state and country.
+
+	* Make it easy to find locations you're looking for.  You may like to show matching locations in a list, that can then be added.
+
+	* The saved locations should appear on your app in some kind of list, with a synopsis of the current weather conditions for each one.  (your app should retrieve the current weather for all of the saved location when you load the page, as well as for every new location when it is added)
+
+	* Try to use the weather condition icons that are provided by the api to give some visual information.
+
+	* Be able to select one of your locations to show a detailed view of that one location.  This should include not only the detailed current weather conditions, but also a forecast for the next few days.  This needs to have some kind of imagery here.  Either find icons included with the API, or investigate some third-party icons or images.
+
+	* You may like to be able to remove a location from its detail page, or from the main list.
+
+Extra Features:
+	* Geolocation!  Implement HTML5 Geolocation so the user can see the weather at their current location.  Take this location data and feed it into the weather api.
+
+	* Animations!  For example, when your view changes from the list view to the detail view, you can have the list fade out, and the details fade in.
+
+	* Maps!  Use the Google Maps API to display a local map view of the location on its detail page.
+
+Deployment:
+	* Deploy to gh-pages, and submit to the standard form.  (I would suggest deploying to gh-pages really early, so you can start testing it there as soon as you can)
+

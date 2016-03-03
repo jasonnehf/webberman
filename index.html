@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Webberman: Weather. On the Web. Man.</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div class="container">
+      	<div class="row">
+      	<div class="col-xs-12 logo">
+      		<button id="btn-search" class="btn-search btn btn-warning"></button><input placeholder="City,State | Zipcode" type="text" id="search-city" >
+      	</div>
+      	</div>
+			<div class="row">
+				<div id="currentobservation-template" class="col-xs-12 col-sm-6 col-md-4 col-lg-4 well well-sm panel panel-default weather weather-forecast hidden">
+					<div class="panel-heading row">
+						<div class="col-xs-6 citystate">Alameda, CA</div><div class="datetime text-right col-xs-6">Currently</div>
+					</div>
+						<div class="col-xs-4 temperature-holder">
+							<div class="temperature">65</div>
+							<div class="temperature-current">&deg;F</div>
+						</div>
+						<div class="col-xs-4 info row">
+							<div class="info col-xs-6 info-left">Humidity</div><div class="info info-right col-xs-6 info-template">50%</div>
+							<div class="info col-xs-6 info-left">Wind</div><div class="info info-right col-xs-6 info-template">50%</div>
+							<div class="info col-xs-12 info-space"><hr/></div>
+							<div class="info col-xs-12"><button class="btn btn-warning btn-get-forecast">Get Forecast</button></div>
+							</div>
+						<div class="col-xs-4 pull-right">
+							<div class="wi wi-icon"></div>
+							<div class="wi wi-desc bottom">weather</div>
+						</div>
+
+
+				</div>
+				<div id="forecast-template" class="col-xs-12 col-sm-6 col-md-4 col-lg-4 well well-sm panel panel-default weather weather-forecast hidden" >
+					<div class="panel-heading row">
+						<div class="col-xs-6 citystate">Alameda, CA</div><div class="datetime text-right col-xs-6">Today</div>
+					</div>
+						<div class="col-xs-4 temperature-holder">
+							<div class="temperature-day temp-hi">65</div>
+							<div class="temperature-day-degrees">&deg;F</div>
+							<div class="temperature-day temp-lo">65</div>
+							<div class="temperature-day-degrees">&deg;F</div>
+						</div>
+						<div class="col-xs-4 info row">
+							<div class="info col-xs-6 info-left">Humidity</div><div class="info info-right col-xs-6 info-template">50%</div>
+							<div class="info col-xs-12 info-space"><hr/></div>
+							<div class="info col-xs-12"><button class="btn btn-warning btn-get-forecast">Get Forecast</button></div>
+							</div>
+						<div class="col-xs-4 pull-right">
+							<div class="wi wi-icon text-centered"></div>
+							<div class="wi wi-desc bottom">Mostly Sunny</div>
+						</div>
+
+
+				</div>
+			</div>
+
+      </div>
+        
+    <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>

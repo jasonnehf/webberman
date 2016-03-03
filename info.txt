@@ -1,0 +1,58 @@
+
+Store:
+	pref:: units: imperial/metric
+	city list: from object.id
+
+Display
+	city name
+	temp
+	time
+	icon : 
+	sunset / sunrise
+	condition : from object.weather.description
+	icon : from object.weather.id / .icon
+	wind speed
+	humidity
+
+units: add &units=metric|imperial to GET string
+
+Forecast : api.openweathermap.org/data/2.5/forecast/daily?id=CITY_ID&cnt=NUM_OF_DAYS
+Current: http://api.openweathermap.org/data/2.5/weather?q=CITY_ID
+
+
+A	Mostly Cloudy day
+C	Cloudy + Foggy
+D	Mostly Cloudy + Windy day
+E	Cloudy + Windy
+I	Cloudy + Snow
+S	Thunderstorm + Rain
+W	Rain
+:	Tornado
+,	Windy
+1	Sunny day
+2	Mostly Sunny day
+3	Cloudy
+6	Clear night
+
+
+
+
+
+WU - query.results.current_observation.
+	.display_location.full
+	.display_location.zip
+	.local_time
+	.relative_humidity
+	.temp_f
+	.temp_c
+	.wind_string
+	.weather
+
+	.query.results.forecast.
+		.simpleforecast.forecastday[n]
+			.conditions
+			.date
+			.high
+			.low
+			.date.weekday
+
